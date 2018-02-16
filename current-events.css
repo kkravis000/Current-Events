@@ -1,0 +1,110 @@
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+.banner {
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	color: #6429ad;
+}
+
+.step-header {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+
+.step-content {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px 50px auto;
+	grid-row-gap: 30px;
+	justify-items: center;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+
+.step-illustration {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.interest-tags {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	grid-row-gap: 30px;
+	grid-column-gap: 80px;
+	justify-item: center;
+}
+
+.interest-tag-wrapper {
+	height: 184px;
+	width: 200px;
+	cursor: pointer;
+}
+
+.interest-tag-pic {
+	display: block;
+	height: 136px;
+	width: 200px;
+	text-align: center;
+	opacity: 0.4; /* The opacity will change to 1.0 once it's chosen */
+}
+
+
+.interest-tag-text {
+	height: 38px;
+	width: 200px;
+	margin-top: 10;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+.previous-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.skip-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 0.4;
+	border: none;
+	color: white;
+	padding: 10px 35px;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.done-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
