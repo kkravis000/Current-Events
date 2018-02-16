@@ -1,0 +1,44 @@
+<html>
+<header>
+	<title>Current Events</title>
+	<link rel="stylesheet" type="text/css" href="current-event.css"/>
+</header>
+<body>
+	<!-- Banner -->
+	<h1 class="banner">Current Events</h1>
+
+	<div class="count-step">
+		<!-- Count the step (1, 2, 3, 4). This may be implemented with an image? -->
+	</div>
+
+	<!-- The content of this step, which contains 4 parts: title (e.g. "choose your interests"), illustration ("e.g. you may change..."), options (e.g. tags, check boxes, etc.), and controls(back to previous, skip, submit) -->
+	<div class="step-content">
+		<!-- title -->
+		<h2 class="step-header">Choose your interests</h2>
+
+		<!-- illustration -->
+		<p class="step-illustration"> Click to choose, and click again to remove. You can change these later! More tags under construction.</p>
+
+		<!-- options (here tags) -->
+		<div class="interest-tags">
+			<div id="tag-politics" class="tag">Politics</div>
+			<div id="tag-technologies" class="tag">Technologies</div>
+			<div id="tag-business" class="tag">Business</div>
+			<div id="tag-entertainments" class="tag">Entertainments</div>
+			<div id="tag-health" class="tag">Health</div>
+			<div id="tag-sports" class="tag">Sports</div>
+			<div id="tag-homes" class="tag">Homes</div>
+			<div id="tag-fashion" class="tag">Fashion</div>
+		</div>
+
+		<!-- controls -->
+		<div class="previous-skip-submit">
+			<button id="interests-previous" class="previous-button">Previous</button>
+			<button id="interests-skip" class="skip-button">Skip</button>
+			<button id="interests-done" class="done-button">Done!</button>
+		</div>
+	</div>
+	<script src="current-events.js"></script>
+</body>
+</html>
+
