@@ -20,12 +20,12 @@ body {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 50px 50px auto;
-	grid-row-gap: 30px;
+	grid-row-gap: 25px;
 	justify-items: center;
 	margin-top: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 
 .step-illustration {
