@@ -2,6 +2,10 @@ body {
 	font-family: 'Comfortaa', cursive;
 }
 
+a {
+	color: white;
+}
+
 .banner {
 	height: 50px;
 	padding: 0;
@@ -20,12 +24,12 @@ body {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 50px 50px auto;
-	grid-row-gap: 25px;
+	grid-row-gap: 30px;
 	justify-items: center;
 	margin-top: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .step-illustration {
@@ -33,6 +37,13 @@ body {
 	margin: 0px;
 }
 
+.field {
+	margin: 8px 0px;
+}
+
+.submit {
+	margin-top: 275px;
+}
 
 .interest-tags {
 	display: grid;
@@ -66,8 +77,9 @@ body {
 	text-align: center;
 }
 
+/* Buttons */
 
-.previous {
+.previous-button {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
@@ -81,7 +93,7 @@ body {
 	cursor: pointer;
 }
 
-.skip {
+.skip-button {
 	background-color: #6429ad; /* Purple */
 	opacity: 0.4;
 	border: none;
@@ -95,7 +107,7 @@ body {
 	cursor: pointer;
 }
 
-.done {
+.done-button {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
