@@ -1,12 +1,31 @@
 <html>
-/*
-	Global classes
-					*/
-body {
-}
+<header>
+   <title>Current Events</title>
+   <link rel="stylesheet" type="text/css" href="current-event.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
 
-.progress-bar {
-	height: 50px;
-	background-color: purple;
-}
+<!-- The content of this step, which contains 4 parts: title (e.g. "choose your interests"), illustration ("e.g. you may change..."), options (e.g. tags, check boxes, etc.), and controls(back to previous, skip, submit) -->
+<div class="step-content">
+		<!-- title -->
+		<h2 class="step-header">Create an Account</h2>
+
+		<!-- account fields-->
+		<div class="create-account-fields">
+			<div id="field-first-name" class="field">First Name</div>
+			<div id="field-last-name" class="field">Last Name</div>
+			<div id="field-e-mail" class="field">E-mail</div>
+			<div id="field-username" class="field">Username</div>
+			<div id="field-password" class="field">Password</div>
+			<div id="field-confirm-password" class="field">Confirm Password</div>
+		</div>
+
+		<!-- controls -->
+		<div class="previous-skip-submit">
+      <button id="create-account-done" class="done-button">Next</button>
+		</div>
+	</div>
+	<script src="current-events.js"></script>
+</body>
 </html>
