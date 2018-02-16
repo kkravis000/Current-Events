@@ -79,13 +79,19 @@ a {
 
 /* Buttons */
 
+.buttons-wrapper {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .previous-button {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
 	color: white;
 	padding: 10px 20px;
-	margin: 0px 10px;
+	margin: 0px 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -99,7 +105,7 @@ a {
 	border: none;
 	color: white;
 	padding: 10px 35px;
-	margin: 0px 10px;
+	margin: 0px 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -113,7 +119,7 @@ a {
 	border: none;
 	color: white;
 	padding: 10px 25px;
-	margin: 0px 10px;
+	margin: 0px 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
