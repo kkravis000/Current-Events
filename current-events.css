@@ -67,7 +67,7 @@ body {
 }
 
 
-.previous-button {
+.previous {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
@@ -81,7 +81,7 @@ body {
 	cursor: pointer;
 }
 
-.skip-button {
+.skip {
 	background-color: #6429ad; /* Purple */
 	opacity: 0.4;
 	border: none;
@@ -95,7 +95,7 @@ body {
 	cursor: pointer;
 }
 
-.done-button {
+.done {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
