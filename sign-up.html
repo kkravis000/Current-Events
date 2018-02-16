@@ -1,0 +1,44 @@
+<html>
+<head>
+   <title>Current Events</title>
+   <link rel="stylesheet" type="text/css" href="current-events.css"/>
+   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="current-events.js"></script>
+</head>
+<body>
+  <h1 class="banner">Current Events</h1>
+
+  <div class="count-step">
+  <!-- Count the step (1, 2, 3, 4). This may be implemented with an image? -->
+  </div>
+
+<!-- The content of this step, which contains 4 parts: title (e.g. "choose your interests"), illustration ("e.g. you may change..."), options (e.g. tags, check boxes, etc.), and controls(back to previous, skip, submit) -->
+  <div class="step-content">
+
+		<!-- title -->
+		<div class="step-header">Create an Account</div>
+
+		<!-- account fields-->
+		<div class="create-account-fields">
+			<div id="field-first-name" class="field">First Name:</div>
+      <input id="first-name-field" type=text value="" required>
+			<div id="field-last-name" class="field">Last Name:</div>
+      <input id="last-name-field" type=text value="" required>
+			<div id="field-e-mail" class="field">E-mail:</div>
+      <input id="e-mail-field" type=text value="" required>
+			<div id="field-username" class="field">Username:</div>
+      <input id="e-mail-field" type=text value="" required>
+			<div id="field-password" class="field">Password:</div>
+      <input id="password-field" type=text value="" required>
+			<div id="field-confirm-password" class="field">Confirm Password:</div>
+      <input id="confirm-password-field" type=text value="" required>
+		</div>
+
+		<!-- controls -->
+		<div class="previous-skip-submit">
+      <a href="choose-interest" class="done">Done!</a>
+		</div>
+	</div>
+</body>
+</html>
