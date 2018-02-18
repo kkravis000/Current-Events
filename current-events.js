@@ -39,11 +39,12 @@ $(document).ready(function() {
 	});
 });
 
-$(document).ready(function(){
-    $("#submit-sign-up").click(function(){
-        $(".sign-up-confirmation").show();
-    });
-});
+function ShowConfirmation() {
+	var div = document.getElementById("SignUpConfirmation");
+		if (div.style.display == "none") {
+			div.style.display = "block";
+		}
+}
 
 function nextArticleFirst() 
 {
