@@ -204,3 +204,29 @@ a {
 	text-align: center;
 	font-size: 30px;
 }
+
+.featured-article-nav-button {
+	float: left;
+	margin: 150px 0px;
+}
+
+.featured-event-scroller {
+	float: left;
+	height: 450px;
+	width: 550px;
+	margin: 50px 475px;
+}
+
+.featured-event-scroller h1 {
+	text-align: center;
+}
+
+.featured-event {
+	background-color: #BCA3FF;
+	float: left;
+	height: 450px;
+	width: 450px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+}

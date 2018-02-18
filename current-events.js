@@ -10,10 +10,23 @@ var articleTitles = [
 "Nikolas Cruz showed no warning signs before Florida school shooting, say couple who took him in"
 ];
 
+var featuredArticleLinks = [
+"https://www.cnn.com/2018/02/17/politics/white-house-responds-mueller/index.html",
+"http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547"
+];
+
+var featuredArticleTitles = [
+"Trump responds to Mueller indictment news",
+"7.2 magnitude earthquake rocks Mexico, 2 killed in chopper crash"
+];
+
+
 var articleOne = 0;
 var articleTwo = 1;
+var featuredArticle = 0;
 
 var numArticles = 3;
+var numFeaturedArticles = 2
 
 $(document).ready(function() {
 	$(".interest-tag-wrapper").click(function() {
@@ -55,6 +68,18 @@ function prevArticleSecond()
 {
 	articleTwo = (articleTwo + 2) % numArticles;
 	document.getElementById("event-title-two").innerHTML = articleTitles[articleTwo].link(articleLinks[articleTwo]);
+}
+
+function nextArticleFeatured()
+{
+	featuredArticle = (featuredArticle + 1) % numFeaturedArticles;
+	document.getElementById("featured-event-title").innerHTML = featuredArticleTitles[featuredArticle].link(featuredArticleLinks[featuredArticle]);
+}
+
+function prevArticleFeatured()
+{
+	featuredArticle = (featuredArticle + 1) % numFeaturedArticles;
+	document.getElementById("featured-event-title").innerHTML = featuredArticleTitles[featuredArticle].link(featuredArticleLinks[featuredArticle]);
 }
 
 
