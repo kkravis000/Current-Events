@@ -174,3 +174,33 @@ a {
 	font-size: 16px;
 	cursor: pointer;
 }
+
+.profile-navbar {
+	background-color: #6429ad;
+}
+
+.article-nav-button {
+	float: left;
+	margin: 150px 0px;
+}
+
+.event-scroller {
+	float: left;
+	height: 350px;
+	width: 450px;
+	margin: 100px;
+}
+
+.event-scroller h1 {
+	text-align: center;
+}
+
+.event {
+	background-color: #BCA3FF;
+	float: left;
+	height: 350px;
+	width: 350px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+}
