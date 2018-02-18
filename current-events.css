@@ -37,14 +37,48 @@ a {
 	margin: 0px;
 }
 
-.field {
-	margin: 8px 0px;
+/* For the sign up section */
+.sign-up-content {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px 50px auto;
+	grid-row-gap: 30px;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+
+.create-account-fields {
+	margin-left: 15px;
+	color: red;
+}
+
+.sign-up-fields {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Comfortaa', cursive;
 }
 
 .submit {
-	margin-top: 275px;
+	margin-top: 120px;
 }
 
+/* For the sign up confirmation pop up */
+
+.sign-up-confirmation {
+	float: right;
+	text-align: center;
+	width: 300px;
+	border: 3px solid purple;
+	margin-right: 50px;
+	margin-top: -250px;
+	padding: 10px;
+}
+
+/* Interests Section */
 .interest-tags {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
@@ -76,10 +110,6 @@ a {
 	font-size: 24px;
 	text-align: center;
 }
-
-.success-articles-button {
-}
-
 
 /* Buttons */
 
@@ -131,7 +161,7 @@ a {
 	cursor: pointer;
 }
 
-.articles-button {
+.pop-up-button {
 	background-color: #6429ad; /* Purple */
 	opacity: 1.0;
 	border: none;
