@@ -7,5 +7,10 @@ $(document).ready(function() {
 			$(this).find('img').css('opacity', '0.4');
 		}
 	});
+});
 
+$(document).ready(function(){
+    $("#submit-sign-up").click(function(){
+        $(".sign-up-confirmation").show();
+    });
 });
