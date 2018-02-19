@@ -276,7 +276,7 @@ Stylize preferences.html
 
 
 /*
-Stylize choose-format.html
+Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 */
 
 
@@ -288,10 +288,6 @@ Stylize choose-format.html
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 /* Hide the browser's default checkbox */
@@ -348,6 +344,7 @@ Stylize choose-format.html
 
 .news-format-checkbox-container {
 	margin: 10% 25%;
+	text-align: left;
 }
 
 
