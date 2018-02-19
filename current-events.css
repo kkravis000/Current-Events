@@ -1,5 +1,4 @@
-
-/* 
+/*
 Global style
 */
 
@@ -15,47 +14,13 @@ a:hover {
 	text-decoration: none;
 }
 
-/*
-Layout: header, navigation bar (3 links), content(2 column);
-*/
-
-/**
-
-.header {
-	display: block;
-	height: 6%;
-	padding: 1%;
-	margin: 0.8%;
-	color: #6429ad;
-	text-align: center;
-	font-size: 30pt;
-	text-decoration: none;
-}
-
-.topnav {
-	overflow: hidden;
-}
-
-
-.topnav a{
-	float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    width: 23%;
-    padding: 1%;
-    text-decoration: none;
-    background-color: #919191;
-}
-
-.topnav a:hover {
-    background-color: #9e9e9e;
- }
-
-**/
-
-
 /* For the sign up section */
+.sign-up-header {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
 .sign-up-content {
 	display: grid;
 	grid-template-columns: auto;
@@ -68,13 +33,13 @@ Layout: header, navigation bar (3 links), content(2 column);
 }
 
 .create-account-fields {
-	margin-left: 15px;
+	margin-left: 175px;
 	color: red;
 }
 
 .sign-up-fields {
 	margin-right: 10px;
-	margin-left: 10px;
+	margin-left: 0px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: 'Comfortaa', cursive;
@@ -92,17 +57,48 @@ input:invalid {
   border: 2px dashed red;
 }
 
+#submit-sign-up {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin-top: 10px;
+	margin-left: 12px;
+	width: 130px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
 
 /* For the sign up confirmation pop up */
 
 #SignUpConfirmation {
-	float: right;
-	text-align: center;
+	text-align: left;
 	width: 300px;
 	border: 3px solid purple;
-	margin-right: 50px;
-	margin-top: -250px;
+	margin-right: 275px;
+	margin-top: -80px;
+	float: right;
 	padding: 10px;
+	display: none;
+}
+
+.pop-up-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 /* Choose Interests Section */
@@ -203,7 +199,7 @@ input:invalid {
 	text-align: center;
 }
 
-/* 
+/*
 Back, Save buttons for choose-interests.html
 */
 
@@ -405,21 +401,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 /*
 Navigation bar
 */
-
-
-.pop-up-button {
-	background-color: #6429ad; /* Purple */
-	opacity: 1.0;
-	border: none;
-	color: white;
-	padding: 10px 25px;
-	margin: 0px 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
-}
 
 .profile-navbar {
 	background-color: #6429ad;
