@@ -39,9 +39,43 @@ $(document).ready(function() {
 	});
 });
 
-function SignUpConfirmation() {
+/*function SignUpConfirmation() {
     var x = document.getElementById("SignUpConfirmation");
     x.style.display = "block";
+}*/
+
+function SignUpConfirmation() {
+		var x = document.getElementById("SignUpConfirmation");
+    var a = document.forms["create-account-fields"]["first-name-field"].value;
+		var b = document.forms["create-account-fields"]["last-name-field"].value;
+		var d = document.forms["create-account-fields"]["e-mail-field"].value;
+		var e = document.forms["create-account-fields"]["username-field"].value;
+		var f = document.forms["create-account-fields"]["password-field"].value;
+		var g = document.forms["create-account-fields"]["confirm-password-field"].value;
+    if (a === "" || b === "" || d === "" || e === "" || f === "" || g === "") {
+			x.style.display = "none";
+			alert("Please fill in all required fields!");
+      event.preventDefault();
+    }
+		else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(d) === false) {
+			x.style.display = "none";
+			alert("Invalid E-mail!");
+      event.preventDefault();
+		}
+		else if (f != g) {
+			x.style.display = "none";
+			alert("Passwords do not match!");
+			event.preventDefault();
+		}
+		else if (f.length < 8 || g.length < 8) {
+			x.style.display = "none";
+			alert("Password must be at least 8 characters long!");
+			event.preventDefault();
+		}
+		else {
+			x.style.display = "block";
+			event.preventDefault();
+		}
 }
 
 
