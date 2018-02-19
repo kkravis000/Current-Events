@@ -11,37 +11,6 @@ a {
 	color: white;
 }
 
-.banner {
-	height: 50px;
-	padding: 0;
-	margin: 0;
-	color: #6429ad;
-}
-
-.step-header {
-	text-align: center;
-	vertical-align: middle;
-	font-size: 30px;
-}
-
-
-.step-content {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 50px 50px auto;
-	grid-row-gap: 30px;
-	justify-items: center;
-	margin-top: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-bottom: 10px;
-}
-
-.step-illustration {
-	padding: 0px;
-	margin: 0px;
-}
-
 /* For the sign up section */
 .sign-up-content {
 	display: grid;
@@ -83,13 +52,74 @@ a {
 	padding: 10px;
 }
 
-/* Interests Section */
+/* Choose Interests Section */
+
+/* Create two columns.*/
+.column {
+	float: left;
+	text-align: center;
+}
+
+.left {
+	width: 25%;
+	margin: 0.5%;
+}
+
+.right {
+	width: 60%;
+	margin: 1% 5% 1% 0.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* Stylize side bar on left hand side of "set preference" page.*/
+.preference-nav-bar {
+	display: block;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    padding: 3% 10%;
+    margin: 33% auto;
+    text-decoration: none;
+    background-color: #919191;
+    font-size: 15px;
+}
+
+
+.left a:hover {
+    background-color: #9e9e9e;
+ }
+
+
+
+.preference-header {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	margin: 3% auto 1% auto;
+}
+
+.preference-illustration {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 15px;
+	margin: 1% auto 3% auto;
+}
+
 .interest-tags {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
-	grid-row-gap: 30px;
-	grid-column-gap: 80px;
+	grid-row-gap: 5%;
+	grid-column-gap: 0.5%;
 	justify-item: center;
 }
 
@@ -97,6 +127,10 @@ a {
 	height: 184px;
 	width: 200px;
 	cursor: pointer;
+}
+
+.interest-tag-wrapper:hover .interest-tag-pic {
+	box-shadow: 5px 5px #000000;
 }
 
 .interest-tag-pic {
@@ -116,21 +150,21 @@ a {
 	text-align: center;
 }
 
-/* Buttons */
+/* 
+Discard and Back, Save buttons for choose-interests.html
+*/
 
-.buttons-wrapper {
+.centered-buttons-wrapper {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5% 0;
+	text-align: center;
 }
 
-.previous-button {
-	background-color: #6429ad; /* Purple */
-	opacity: 1.0;
+
+.set-preferences-button {
 	border: none;
-	color: white;
-	padding: 10px 20px;
-	margin: 0px 15px;
+	padding: 1% 3%;
+	margin: 0px 5%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -138,33 +172,190 @@ a {
 	cursor: pointer;
 }
 
-.skip-button {
-	background-color: #6429ad; /* Purple */
-	opacity: 0.4;
-	border: none;
-	color: white;
-	padding: 10px 35px;
-	margin: 0px 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
+.discard-changes {
+	background-color: white;
+	color: red;
+	border: 2px solid red;
 }
 
-.done-button {
-	background-color: #6429ad; /* Purple */
-	opacity: 1.0;
-	border: none;
+.discard-changes:hover {
+	background-color: red;
 	color: white;
-	padding: 10px 25px;
-	margin: 0px 15px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	cursor: pointer;
 }
+
+.save-changes {
+	background-color: #6429ad; /* Purple */
+	color: white;
+	border: 2px solid #6429ad;
+}
+
+.save-changes:hover {
+	background-color: #b98cf2; /* light purple */
+	color: white;
+	border: 2px solid #b98cf2;
+}
+
+/*
+Popup windows for choose-interests.html
+*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .popup-content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/*
+Stylize preferences.html
+*/
+
+.preference-module {
+	margin: 5% 20%;
+	padding: 0;
+	background-color: #6429ad;
+	opacity: 0.5;
+	color: white;
+}
+
+.preference-module-heading {
+	border: 5px solid  #6429ad;
+}
+
+.preference-bullet {
+	list-style-type: none;
+	padding: 3% 3%;
+	background-color: white;
+	color: #6429ad;
+	border: 2px solid #6429ad;
+}
+
+
+/*
+Stylize choose-format.html
+*/
+
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.news-format-checkbox-container {
+	margin: 10% 25%;
+}
+
+
+
+/*
+Navigation bar
+*/
+
 
 .pop-up-button {
 	background-color: #6429ad; /* Purple */
