@@ -9,43 +9,39 @@
 <body>
   <h1 class="banner">Current Events</h1>
 
-  <div class="count-step">
-  <!-- Count the step (1, 2, 3, 4). This may be implemented with an image? -->
-  </div>
-
-<!-- The content of this step, which contains 4 parts: title (e.g. "choose your interests"), illustration ("e.g. you may change..."), options (e.g. tags, check boxes, etc.), and controls(back to previous, skip, submit) -->
-  <div class="sign-up-content">
+ <div class="sign-up-content">
 
 		<!-- title -->
 		<div class="step-header">Create an Account</div>
 
 		<!-- account fields-->
-		<div class="create-account-fields">
-      * <input id="first-name-field" class="sign-up-fields" type=text placeholder="First Name" value="">
-      * <input id="last-name-field" class="sign-up-fields" type=text placeholder="Last Name" value=""> <br>
-      * <input id="e-mail-field" class="sign-up-fields" type=text placeholder="E-mail Address" value=""> <br>
-      * <input id="username-field" class="sign-up-fields" type=text placeholder="Username" value=""> <br>
-      * <input id="password-field" class="sign-up-fields" type=text placeholder="Password" value="">
-      * <input id="confirm-password-field" class="sign-up-fields" type=text placeholder="Confirm Password" value=""><br>
-      * = required
-		</div>
-
-		<!-- controls -->
-
-    <div class="submit">
-      <button id="submit-sign-up" class="done-button">
-        Submit
-      </button>
-		</div>
+		<form class="create-account-fields" onsubmit="ShowConfirmation()">
+      * <input id="first-name-field" name="first-name-field" class="sign-up-fields" type=text placeholder="First Name" value="" required>
+      * <input id="last-name-field" name="last-name-field" class="sign-up-fields" type=text placeholder="Last Name" value="" required> <br>
+      * <select name="Gender" class="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select> <br>
+      * <input id="e-mail-field" name="e-mail-field" class="sign-up-fields" type="email" placeholder="E-mail Address" value="" required> <br>
+      * <input id="username-field" name="username-field" class="sign-up-fields" type=text placeholder="Username" value="" required> <br>
+      * <input id="password-field" name="password-field" class="sign-up-fields" type=text placeholder="Password" value="" required minlength="8">
+      * <input id="confirm-password-field" name="confirm-password-field" class="sign-up-fields" type=text placeholder="Confirm Password" value="" required minlength="8"><br>
+      * = required <br>
+      <input type="submit" name="submit-sign-up" id="submit-sign-up" onclick="SignUpConfirmation()"/>
+		</form>
   </div>
 
-<span class="sign-up-confirmation" id="myPopup" hidden>
-  Thanks for signing up, Jane Doe! An e-mail confirmation was sent to jane.doe@gmail.com. <br> <br>
-  <div class="buttons-wrapper">
-    <a href="choose-interests.html" class="pop-up-button">Set Preferences</a> <br>
-    <a href="profile.html" class="pop-up-button">View Profile</a> <br>
-    <a href="explore-interests.html" class="pop-up-button">Browse Articles</a> <br>
-  </div>
-</span>
+<!-- controls -->
+
+    <div id="SignUpConfirmation">
+      Thanks for signing up, Jane Doe! An e-mail confirmation was sent to jane.doe@gmail.com. <br> <br>
+      <div class="buttons-wrapper">
+        <a href="choose-interests.html" class="pop-up-button">Set Preferences</a> <br>
+        <a href="explore-interests.html" class="pop-up-button">Explore Your Interests</a> <br>
+      </div>
+    </div>
 </body>
 </html>
+
+ 
