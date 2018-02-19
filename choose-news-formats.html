@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Choose News Format</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="current-events.css"/>
+  <script src="current-events.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse profile-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Current Events</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="explore-interests.html">Explore Your Interests</a></li>
+        <li class="active"><a href="under-construction.html">Profile</a></li>
+        <li><a href='under-construction.html'>Forums</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+            <span class="glyphicon glyphicon-cog"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">I forgot</a></li>
+            <li><a href="#">What we were</a></li>
+            <li><a href="#">Going to put here</a></li>
+          </ul>
+      </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+	<!-- Content -->
+	<div class="row">
+		<!-- Left column -->
+		<div class="column left">
+			<a href="choose-interests.html" class="preference-nav-bar">Choose Your Interests</a>
+			<a href="choose-news-formats.html" class="preference-nav-bar" style="background-color:#ededed;color:#000000;box-shadow:2px 2px #000000;">Customize News Format</a>
+		</div>
+
+		<!-- Right column -->
+		<div class="column right">
+
+			<div class="preference-header">Choose News Format</div>
+			<div class="preference-illustration">News will be presented in chosen formats.</div>
+
+			<div class="news-format-checkbox-container">
+				<label class="container">Video<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+				<label class="container">Written<input type="checkbox"><span class="checkmark"></span></label>
+				<label class="container">Audio<input type="checkbox"><span class="checkmark"></span></label>
+			</div>
+
+
+			<div class="centered-buttons-wrapper">
+			<a href="preferences.html" class="set-preferences-button discard-changes">Discard and Back</a>
+			<a href="#save-popup" class="set-preferences-button save-changes">Save Changes</a>
+			<div id="save-popup" class="overlay">
+				<div class="popup">
+					<h2>Save Success</h2>
+					<a class="close" href="#">&times;</a>
+					<div class="popup-content">You have successfully saved your changes.
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+	</div>
+</body>
+</html>
