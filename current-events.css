@@ -93,7 +93,7 @@ input:invalid {
 
 
 
-/* Stylize side bar on left hand side of "set preference" page.*/
+/* Stylize side bar on left hand side of preferences.html, choose-interests.html, and choose-news-formats.html page.*/
 .preference-nav-bar {
 	display: block;
     color: #ffffff;
@@ -164,7 +164,7 @@ input:invalid {
 }
 
 /* 
-Discard and Back, Save buttons for choose-interests.html
+Back, Save buttons for choose-interests.html
 */
 
 .centered-buttons-wrapper {
