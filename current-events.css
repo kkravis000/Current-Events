@@ -11,6 +11,10 @@ a {
 	color: white;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 /* For the sign up section */
 .sign-up-content {
 	display: grid;
