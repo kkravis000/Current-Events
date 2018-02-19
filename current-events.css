@@ -15,6 +15,46 @@ a:hover {
 	text-decoration: none;
 }
 
+/*
+Layout: header, navigation bar (3 links), content(2 column);
+*/
+
+/**
+
+.header {
+	display: block;
+	height: 6%;
+	padding: 1%;
+	margin: 0.8%;
+	color: #6429ad;
+	text-align: center;
+	font-size: 30pt;
+	text-decoration: none;
+}
+
+.topnav {
+	overflow: hidden;
+}
+
+
+.topnav a{
+	float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    width: 23%;
+    padding: 1%;
+    text-decoration: none;
+    background-color: #919191;
+}
+
+.topnav a:hover {
+    background-color: #9e9e9e;
+ }
+
+**/
+
+
 /* For the sign up section */
 .sign-up-content {
 	display: grid;
