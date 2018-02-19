@@ -34,15 +34,24 @@ a {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: 'Comfortaa', cursive;
+	color: black;
 }
 
-.submit {
-	margin-top: 120px;
+.gender {
+	font-family: 'Comfortaa', cursive;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: black;
 }
+
+input:invalid {
+  border: 2px dashed red;
+}
+
 
 /* For the sign up confirmation pop up */
 
-.sign-up-confirmation {
+#SignUpConfirmation {
 	float: right;
 	text-align: center;
 	width: 300px;
