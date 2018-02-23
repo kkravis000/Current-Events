@@ -457,3 +457,48 @@ Navigation bar
 	text-align: center;
 	font-size: 30px;
 }
+
+/* Article View */
+
+.helpful-links-section {
+	text-align: left;
+	width: 300px;
+	border: 3px solid purple;
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
+	padding: 10px;
+}
+
+.pop-up-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px 15px;
+	length: 50px;
+	width: 240px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.previous-article-section {
+	text-align: left;
+	width: 300px;
+	border: 3px solid purple;
+	float: right;
+	margin-top: 270px;
+	margin-right: -300px;
+	padding: 10px;
+}
+
+iframe {
+	margin-left: 50px;
+	margin-top: 10px;
+	height: 450px;
+	width: 700px;
+}
