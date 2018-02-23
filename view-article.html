@@ -55,25 +55,24 @@
     </div>
   </div>
 </nav>
-<!-- YouTube -->
-<iframe src="https://www.youtube.com/embed/7mwGhfoLcDY"></iframe>
-  
-<iframe src="http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547" scrolling="yes">
+
+<iframe id="article-viewer" src="http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547" scrolling="yes">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
-<div class="helpful-links-section">
+<div id="helpful-links-section">
   Want more background information? Here are some resources we think are helpful! <br> <br>
   <div class="buttons-wrapper">
-    <a href="preferences.html" class="pop-up-button">Resource 1</a> <br>
-    <a href="explore-interests.html" class="pop-up-button">Resource 2</a> <br>
+    <a class="pop-up-button" onclick="firstHelpfulLink()">Resource 1</a> <br>
   </div>
 </div>
 
-<div class="previous-article-section">
+<div id="previous-article-section">
+  Toolbar:
   <div class="buttons-wrapper">
-    <a href="preferences.html" class="pop-up-button">Return to Previous Article</a> <br>
-    <a href="preferences.html" class="pop-up-button">Return to Original Article</a> <br>
+    <a id="previous-article" class="pop-up-button">Return to Previous Article</a> <br>
+    <a id="original-article" class="pop-up-button" onclick="originalArticle()" class="pop-up-button">Return to Original Article</a> <br>
+    <a href="explore-interests.html" class="pop-up-button">Explore Interests</a> <br>
   </div>
 </div>
 </body>
