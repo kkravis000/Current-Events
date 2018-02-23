@@ -1,14 +1,28 @@
-var articleLinks = [
-"https://www.cnn.com/2018/02/17/politics/white-house-responds-mueller/index.html",
-"http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547",
-"http://www.foxnews.com/us/2018/02/18/nikolas-cruz-showed-no-warning-signs-before-florida-school-shooting-say-couple-who-took-him-in.html"
+var articleLinksPolitical = [
+"under-construction.html",
+"under-construction.html",
+"under-construction.html",
+"under-construction.html"
 ];
 
-var articleTitles = [
+var articleTitlesPolitical = [
 "Trump responds to Mueller indictment news",
-"7.2 magnitude earthquake rocks Mexico, 2 killed in chopper crash",
-"Nikolas Cruz showed no warning signs before Florida school shooting, say couple who took him in"
+"Florida lawmakers face political pressure after Parkland shooting",
+"Meghan Markle and Prince Harry's romantic date night pets political",
+"Mueller files new fraud charges against Paul Manafort and Rick Gates"
 ];
+
+var articleLinksSeasonal = [
+"under-construction.html",
+"view-article.html",
+"under-construction.html"
+]
+
+var articleTitlesSeasonal = [
+"Coping with seasonal affective disorder",
+"7.2 magnitude earthquake rocks Mexico, 2 killed in chopper crash",
+"This season's flu vaccine is only 36 percent effective, but experts say you should still get it"
+]
 
 var featuredArticleLinks = [
 "https://www.cnn.com/2018/02/17/politics/white-house-responds-mueller/index.html",
@@ -21,12 +35,13 @@ var featuredArticleTitles = [
 ];
 
 
-var articleOne = 0;
-var articleTwo = 1;
+var politicalArticle = 0;
+var seasonalArticle = 0;
 var featuredArticle = 0;
 
-var numArticles = 3;
-var numFeaturedArticles = 2
+var numPoliticalArticles = 4;
+var numSeasonalArticles = 3;
+var numFeaturedArticles = 2;
 
 $(document).ready(function() {
 	$(".interest-tag-wrapper").click(function() {
@@ -78,30 +93,35 @@ function SignUpConfirmation() {
 		}
 }
 
+function init() {
+	document.getElementById("event-title-one").innerHTML = articleTitlesPolitical[politicalArticle].link(articleLinksPolitical[politicalArticle]);
+	document.getElementById("event-title-two").innerHTML = articleTitlesSeasonal[seasonalArticle].link(articleLinksSeasonal[seasonalArticle]);
+}
+
 
 function nextArticleFirst() 
 {
-	articleOne = (articleOne + 1) % numArticles;
-	document.getElementById("event-title-one").innerHTML = articleTitles[articleOne].link(articleLinks[articleOne]);
+	politicalArticle = (politicalArticle + 1) % numPoliticalArticles;
+	document.getElementById("event-title-one").innerHTML = articleTitlesPolitical[politicalArticle].link(articleLinksPolitical[politicalArticle]);
 
 }
 
 function prevArticleFirst() 
 {
-	articleOne = (articleOne + 2) % numArticles;
-	document.getElementById("event-title-one").innerHTML = articleTitles[articleOne].link(articleLinks[articleOne]);
+	politicalArticle = (politicalArticle + numPoliticalArticles - 1) % numPoliticalArticles;
+	document.getElementById("event-title-one").innerHTML = articleTitlesPolitical[politicalArticle].link(articleLinksPolitical[politicalArticle]);
 }
 
 function nextArticleSecond()
 {
-	articleTwo = (articleTwo + 1) % numArticles;
-	document.getElementById("event-title-two").innerHTML = articleTitles[articleTwo].link(articleLinks[articleTwo]);
+	seasonalArticle = (seasonalArticle + 1) % numSeasonalArticles;
+	document.getElementById("event-title-two").innerHTML = articleTitlesSeasonal[seasonalArticle].link(articleLinksSeasonal[seasonalArticle]);
 }
 
 function prevArticleSecond()
 {
-	articleTwo = (articleTwo + 2) % numArticles;
-	document.getElementById("event-title-two").innerHTML = articleTitles[articleTwo].link(articleLinks[articleTwo]);
+	seasonalArticle = (seasonalArticle + numSeasonalArticles - 1) % numSeasonalArticles;
+	document.getElementById("event-title-two").innerHTML = articleTitlesSeasonal[seasonalArticle].link(articleLinksSeasonal[seasonalArticle]);
 }
 
 function nextArticleFeatured()
@@ -128,6 +148,18 @@ function firstHelpfulLink()
 	z.style.marginTop = "10px";
 }
 
+function secondHelpfulLink()
+{
+	$('#article-viewer').attr('src', "https://en.wikipedia.org/wiki/Earthquake");
+	var x = document.getElementById("helpful-links-section");
+	var y = document.getElementById("original-article");
+	var z = document.getElementById("previous-article-section");
+	x.style.display = "none";
+	y.style.display = "block";
+	z.style.marginRight = "100px";
+	z.style.marginTop = "10px";
+}
+
 function originalArticle()
 {
 	var x = document.getElementById("helpful-links-section");
@@ -139,6 +171,8 @@ function originalArticle()
 	z.style.marginTop = "235px";
 	$('#article-viewer').attr('src', "http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547");
 }
+
+init();
 
 
 
