@@ -136,43 +136,4 @@ function prevArticleFeatured()
 	document.getElementById("featured-event-title").innerHTML = featuredArticleTitles[featuredArticle].link(featuredArticleLinks[featuredArticle]);
 }
 
-function firstHelpfulLink()
-{
-	$('#article-viewer').attr('src', "https://www.youtube.com/embed/7mwGhfoLcDY");
-	var x = document.getElementById("helpful-links-section");
-	var y = document.getElementById("original-article");
-	var z = document.getElementById("previous-article-section");
-	x.style.display = "none";
-	y.style.display = "block";
-	z.style.marginRight = "100px";
-	z.style.marginTop = "10px";
-}
-
-function secondHelpfulLink()
-{
-	$('#article-viewer').attr('src', "https://en.wikipedia.org/wiki/Earthquake");
-	var x = document.getElementById("helpful-links-section");
-	var y = document.getElementById("original-article");
-	var z = document.getElementById("previous-article-section");
-	x.style.display = "none";
-	y.style.display = "block";
-	z.style.marginRight = "100px";
-	z.style.marginTop = "10px";
-}
-
-function originalArticle()
-{
-	var x = document.getElementById("helpful-links-section");
-	var y = document.getElementById("original-article");
-	var z = document.getElementById("previous-article-section");
-	x.style.display = "block";
-	y.style.display = "none";
-	z.style.marginRight = "-300px";
-	z.style.marginTop = "235px";
-	$('#article-viewer').attr('src', "http://abcnews.go.com/International/75-magnitude-earthquake-rocks-mexico/story?id=53154547");
-}
-
 init();
-
-
-
