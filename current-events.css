@@ -398,7 +398,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 
-
 /*
 Navigation bar
 */
@@ -409,30 +408,72 @@ Navigation bar
 
 .article-nav-button {
 	float: left;
-	margin: 150px 0px;
+	margin: 5px 0px;
+	color: #6429ad;
+	padding: 129px 0;
+	border-radius: 0;
+	border: 1px solid #6429ad;
+
 }
+
 
 .event-scroller {
 	float: left;
 	height: 350px;
-	width: 450px;
-	margin: 100px;
+	width: 522px;
+	margin: 50px;
 }
+
 
 .event-scroller h1 {
 	text-align: center;
+	height: 40px;
+	margin: 5px;
 }
 
 .event {
+	display: flex;
 	background-color: #BCA3FF;
 	float: left;
-	height: 350px;
-	width: 350px;
-	border: 1px solid black;
-	text-align: center;
-	font-size: 30px;
+	height: 290px;
+	width: 400px;
+	margin: 5px;
+	/* padding: 110px 0; */
+	/*width: 300px;*/
+	/*border: 1px solid black;*/
 }
 
+#event-politics {
+	background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url("trump.jpg");
+	background-size: 400px 290px;
+	/* padding-top: 105px 0; */
+}
+
+
+#event-seasonal {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url("affective_disorder.jpg");
+	background-size: 400px 290px;
+}
+
+.event p {
+	padding: 5px 0;
+	margin: auto 30px;
+	font-size: 25px;
+	text-align: center;
+	/*
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	*/
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.event a {
+	color: #e3e3e3;
+}
+.event a:hover {
+	color: white;
+}
 .featured-article-nav-button {
 	float: left;
 	margin: 150px 0px;
