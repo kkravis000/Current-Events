@@ -8,21 +8,39 @@ var articleLinksPolitical = [
 var articleTitlesPolitical = [
 "Trump responds to Mueller indictment news",
 "Florida lawmakers face political pressure after Parkland shooting",
-"Meghan Markle and Prince Harry's romantic date night pets political",
+"Meghan Markle and Prince Harry's romantic date night gets political",
 "Mueller files new fraud charges against Paul Manafort and Rick Gates"
 ];
+
+var articleBackgroundsPolitical = [
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"trump.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"florida.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"meghan.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"mueller.jpg\")",
+];
+
 
 var articleLinksSeasonal = [
 "under-construction.html",
 "view-article.html",
-"under-construction.html"
-]
+"under-construction.html",
+"under-construction.html",
+];
+
 
 var articleTitlesSeasonal = [
 "Coping with seasonal affective disorder",
+"Groundhog Day 2018: Punxsutawney Phil predicts if winter will be longer",
 "7.2 magnitude earthquake rocks Mexico, 2 killed in chopper crash",
-"This season's flu vaccine is only 36 percent effective, but experts say you should still get it"
-]
+"16 more children dead from flu; peak still to come, CDC says"
+];
+
+var articleBackgroundsSeasonal = [
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"affective_disorder.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"groundhog.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"mexico.jpg\")",
+"linear-gradient(to bottom,rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url(\"flu.jpg\")",
+];
 
 var featuredArticleLinks = [
 "https://www.cnn.com/2018/02/17/politics/white-house-responds-mueller/index.html",
@@ -33,6 +51,7 @@ var featuredArticleTitles = [
 "Trump responds to Mueller indictment news",
 "7.2 magnitude earthquake rocks Mexico, 2 killed in chopper crash"
 ];
+
 
 
 var politicalArticle = 0;
@@ -103,26 +122,30 @@ function nextArticleFirst()
 {
 	politicalArticle = (politicalArticle + 1) % numPoliticalArticles;
 	document.getElementById("event-title-one").innerHTML = articleTitlesPolitical[politicalArticle].link(articleLinksPolitical[politicalArticle]);
-
+	document.getElementById("event-politics").style.backgroundImage = articleBackgroundsPolitical[politicalArticle];
 }
 
 function prevArticleFirst() 
 {
 	politicalArticle = (politicalArticle + numPoliticalArticles - 1) % numPoliticalArticles;
 	document.getElementById("event-title-one").innerHTML = articleTitlesPolitical[politicalArticle].link(articleLinksPolitical[politicalArticle]);
+	document.getElementById("event-politics").style.backgroundImage = articleBackgroundsPolitical[politicalArticle];
 }
 
 function nextArticleSecond()
 {
 	seasonalArticle = (seasonalArticle + 1) % numSeasonalArticles;
 	document.getElementById("event-title-two").innerHTML = articleTitlesSeasonal[seasonalArticle].link(articleLinksSeasonal[seasonalArticle]);
+	document.getElementById("event-seasonal").style.backgroundImage = articleBackgroundsSeasonal[seasonalArticle];
 }
 
 function prevArticleSecond()
 {
 	seasonalArticle = (seasonalArticle + numSeasonalArticles - 1) % numSeasonalArticles;
 	document.getElementById("event-title-two").innerHTML = articleTitlesSeasonal[seasonalArticle].link(articleLinksSeasonal[seasonalArticle]);
+	document.getElementById("event-seasonal").style.backgroundImage = articleBackgroundsSeasonal[seasonalArticle];
 }
+
 
 function nextArticleFeatured()
 {
