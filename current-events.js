@@ -59,7 +59,7 @@ var seasonalArticle = 0;
 var featuredArticle = 0;
 
 var numPoliticalArticles = 4;
-var numSeasonalArticles = 3;
+var numSeasonalArticles = 4;
 var numFeaturedArticles = 2;
 
 $(document).ready(function() {
