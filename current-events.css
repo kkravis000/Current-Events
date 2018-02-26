@@ -102,6 +102,11 @@ input:invalid {
 	cursor: pointer;
 }
 
+.buttons-wrapper a:hover {
+	background-color: black;
+	color: white;
+}
+
 /* Choose Interests Section */
 
 /* Create two columns.*/
@@ -398,13 +403,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 
-/*
-Navigation bar
-*/
-
-.profile-navbar {
-	background-color: #6429ad;
-}
 
 .article-nav-button {
 	float: left;
@@ -543,4 +541,37 @@ Navigation bar
 	width: 300px;
 	border: 3px solid purple;
 	padding: 10px;
+}
+
+/*
+Navigation bar - I don't know why we need these important tags
+because this css should be loaded second but we need them for now.
+*/
+
+.navbar-custom {
+	background-color: #6429ad;
+}
+
+.navbar-nav > li > a {
+	color: white !important;
+}
+
+.navbar-nav > li a:hover {
+	background-color: black !important;
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.glyphicon-cog {
+	font-size: 15px;
+}
+
+.glyphicon-education {
+	font-size: 21px;
+}
+
+.navbar-search {
+	margin: 7px;
 }
