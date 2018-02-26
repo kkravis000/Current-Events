@@ -521,6 +521,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	margin-top: 10px;
 	height: 400px;
 	width: 700px;
+	border: 3px solid purple;
 }
 
 .right-container {
