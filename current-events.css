@@ -516,6 +516,13 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	border: 3px solid purple;
 }
 
+.video-viewer {
+	margin-left: 50px;
+	margin-top: 10px;
+	height: 400px;
+	width: 700px;
+}
+
 .right-container {
 	margin-left: 785px;
 	margin-top: -415px;
