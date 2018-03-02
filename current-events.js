@@ -71,6 +71,61 @@ $(document).ready(function() {
 			$(this).find('img').css('opacity', '0.4');
 		}
 	});
+	
+	$("#comment-textarea").on('input', function() {
+		$(this).css('height', 'auto');
+		var sh = $(this)[0].scrollHeight;
+		$(this).css('height', sh + 'px');
+	});
+
+	$("#comment-textarea").click(function() {
+		$(".comment-buttons").show();
+		$(".comment-header").css('height', 'auto');
+	});
+
+	$("#cancel-comment").click(function() {
+		$(".comment-buttons").hide();
+		$("#comment-textarea").val('');
+		$("#comment-textarea").css('height', 'auto');
+		$(".comment-header").css('height', '150px');
+	});
+
+	$("#submit-comment").click(function() {
+		// get user input
+		var content = $("#comment-textarea").val();
+		content = content.replace(/\r?\n/g, '<br />');
+		
+		$(".comment-buttons").hide();
+		$("#comment-textarea").val('');
+		$("#comment-textarea").css('height', 'auto');
+		$(".comment-header").css('height', '150px');
+
+		// get date and time
+		var today = new Date();
+		var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var dateTime = date+' '+time;
+
+		// append on top
+		var userComment = '<div class="posted-comments">' +
+      					'<a href="#"><img class="thumbnail" src="thumbnail_car.jpg"></a>' +
+      					'<div class="post">' + 
+      					'<div class="post-info"><a class="post-user-name" href="#">' +
+      					'Jane Doe' + 
+      					'</a><span class="post-time">' +
+      					dateTime + 
+      					'</span></div>' +
+      					'<div class="post-content">' +
+      					content +
+      					'</div></div></div>';
+
+		$("#comment-body").prepend(userComment);
+
+		// update number of comments
+		numComments = $("#num-comments").html();
+		$("#num-comments").html(parseInt(numComments) + 1);
+	});
+
 });
 
 /*function SignUpConfirmation() {
