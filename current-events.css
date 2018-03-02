@@ -415,6 +415,9 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 
+
+
+
 .event-scroller {
 	float: left;
 	height: 350px;
@@ -581,4 +584,157 @@ because this css should be loaded second but we need them for now.
 
 .navbar-search {
 	margin: 7px;
+}
+
+
+
+/**
+Stylizes the commenting system.
+**/
+
+.comment {
+	margin: 50px 0 50px 50px;
+	width: 700px;
+}
+
+
+.comment-header {
+	margin: 5px 0px 5px 0;
+	padding: 5px 0px 5px 0;
+	text-align: left;
+	height: 150px;
+}
+
+.comment-count {
+	margin: 30px 0;
+}
+
+
+/** Textbox **/
+textarea {
+	resize: none;
+	display: block;
+	min-height: 15px;
+	width: 640px;
+	overflow: hidden;
+	background: transparent;
+	border-color: #d8d8d8;
+	border-style: none none solid none;
+	border-width: 1px;
+	box-shadow: none;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 5px 0 8px 5px;
+	margin: 5px 0 5px 5px;
+}
+
+textarea:focus {
+	color: black;
+	outline-width: 0;
+	border-color: #000000;
+	border-width: 2px;
+}
+
+::-webkit-input-placeholder {
+  color: #d8d8d8;
+}
+
+textarea[name="add-comment"] {
+	float: left;
+}
+
+
+/** Thumbnails **/
+.thumbnail {
+	display: block;
+	float: left;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+/** Comment buttons **/
+.comment-buttons {
+	clear: both;
+	text-align: right;
+	margin: 5px 5px 5px 0;
+	display: none;
+}
+
+.cancel-comment-button {
+	background-color: white;
+	color: red;
+	border: 1px solid red;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+.cancel-comment-button:hover {
+	background-color: red;
+	color: white;
+}
+
+.submit-comment-button {
+	background-color: #6429ad;
+	color: white;
+	border: 1px solid #6429ad;
+	padding: 5px 10px;	
+	margin-left: 10px;
+}
+
+.submit-comment-button:hover {
+	background-color: #b98cf2;
+	color: white;
+	border: 1px solid #b98cf2;
+
+}
+
+/** Comment body **/
+.comment-body {
+	clear: both;
+	margin: 30px 0;
+}
+
+.posted-comments {
+	display: grid;
+	grid-template-columns: 50px auto;
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+	margin-top: 0px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.post-user-name {
+	display:inline-block;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.post-user-name:hover {
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.post-time {
+	display: inline-block;
+	color: #8e8e8e;
+}
+
+.post-content {
+	margin: 10px 5px 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
 }
