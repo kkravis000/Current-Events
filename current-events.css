@@ -103,7 +103,7 @@ input:invalid {
 }
 
 .buttons-wrapper a:hover {
-	background-color: black;
+	background-color: #BA55D3;
 	color: white;
 }
 
@@ -132,9 +132,6 @@ input:invalid {
     clear: both;
 }
 
-
-
-
 /* Stylize side bar on left hand side of preferences.html, choose-interests.html, and choose-news-formats.html page.*/
 .preference-nav-bar {
 	display: block;
@@ -148,12 +145,10 @@ input:invalid {
     font-size: 20px;
 }
 
-
 .left a:hover {
-    background-color: #9e9e9e;
+    background-color: #BA55D3;
+		color: #ffffff;
  }
-
-
 
 .preference-header {
 	text-align: center;
@@ -185,7 +180,7 @@ input:invalid {
 }
 
 .interest-tag-wrapper:hover .interest-tag-pic {
-	box-shadow: 5px 5px #000000;
+	box-shadow: 5px 5px #BA55D3;
 }
 
 .interest-tag-pic {
@@ -195,7 +190,6 @@ input:invalid {
 	text-align: center;
 	opacity: 0.4; /* The opacity will change to 1.0 once it's chosen */
 }
-
 
 .interest-tag-text {
 	height: 38px;
@@ -214,7 +208,6 @@ Back, Save buttons for choose-interests.html
 	margin: 5% 0;
 	text-align: center;
 }
-
 
 .set-preferences-button {
 	border: none;
@@ -245,7 +238,7 @@ Back, Save buttons for choose-interests.html
 }
 
 .save-changes:hover {
-	background-color: #b98cf2; /* light purple */
+	background-color: #BA55D3; /* light purple */
 	color: white;
 	border: 2px solid #b98cf2;
 }
@@ -298,7 +291,7 @@ Popup windows for choose-interests.html
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #BA55D3;
 }
 .popup .popup-content {
   max-height: 30%;
@@ -329,11 +322,9 @@ Stylize preferences.html
 	border: 2px solid #6429ad;
 }
 
-
 /*
 Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 */
-
 
 /* The container */
 .container {
@@ -402,8 +393,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	text-align: left;
 }
 
-
-
 .article-nav-button {
 	float: left;
 	margin: 5px 0px;
@@ -411,12 +400,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	padding: 129px 0;
 	border-radius: 0;
 	border: 1px solid #6429ad;
-
 }
-
-
-
-
 
 .event-scroller {
 	float: left;
@@ -424,7 +408,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	width: 522px;
 	margin: 50px;
 }
-
 
 .event-scroller h1 {
 	height: 40px;
@@ -449,7 +432,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	/* padding-top: 105px 0; */
 }
 
-
 #event-seasonal {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url("affective_disorder.jpg");
 	background-size: 400px 290px;
@@ -467,13 +449,14 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .event a {
 	color: #e3e3e3;
 }
+
 .event a:hover {
 	color: white;
 }
+
 .featured-article-nav-button {
 	float: left;
 	margin: 150px 0px;
@@ -503,7 +486,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 /* Article View */
 
 .article-header {
-	margin-left: 50px;
+	margin-left: 35px;
 	margin-top: 25px;
 	margin-bottom: 10px;
 	text-align: left;
@@ -512,45 +495,77 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 .article-viewer {
-	margin-left: 50px;
-	margin-top: 10px;
-	height: 400px;
-	width: 700px;
+	margin-left: 35px;
+	margin-top: 6px;
+	height: 420px;
+	width: 940px;
 	border: 3px solid purple;
 }
 
 .video-viewer {
-	margin-left: 50px;
-	margin-top: 10px;
-	height: 400px;
-	width: 700px;
+	margin-left: 35px;
+	margin-top: 6px;
+	height: 420px;
+	width: 940px;
 	border: 3px solid purple;
 }
 
 .right-container {
-	margin-left: 785px;
-	margin-top: -415px;
+	margin-left: 1000px;
+	margin-top: -435px;
+}
+
+.helpful-links-button {
+	background-color:	#FF69B4; /* Pink */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	width: 160px;
+	cursor: pointer;
+}
+
+.previous-article-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	width: 160px;
+	cursor: pointer;
 }
 
 .previous-article-header {
-	font-size: 20px;
+	font-size: 16px;
 	margin-bottom: 10px;
 }
 
 .previous-article-section {
 	text-align: left;
-	width: 300px;
+	width: 220px;
 	border: 3px solid purple;
 	margin-top: 10px;
 	padding: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 290px;
 }
 
 .helpful-links-section {
 	text-align: left;
-	width: 300px;
+	width: 220px;
 	border: 3px solid purple;
+	margin-top: 10px;
 	padding: 10px;
+	margin-bottom: 155px;
 }
 
 /*
@@ -567,7 +582,7 @@ because this css should be loaded second but we need them for now.
 }
 
 .navbar-nav > li a:hover {
-	background-color: black !important;
+	background-color: #BA55D3 !important;
 }
 
 .navbar-brand {
@@ -586,17 +601,14 @@ because this css should be loaded second but we need them for now.
 	margin: 7px;
 }
 
-
-
 /**
 Stylizes the commenting system.
 **/
 
 .comment {
-	margin: 50px 0 50px 50px;
-	width: 700px;
+	margin: 10px 0 30px 40px;
+	width: 935px;
 }
-
 
 .comment-header {
 	margin: 5px 0px 5px 0;
@@ -608,7 +620,6 @@ Stylizes the commenting system.
 .comment-count {
 	margin: 30px 0;
 }
-
 
 /** Textbox **/
 textarea {
@@ -644,7 +655,6 @@ textarea:focus {
 textarea[name="add-comment"] {
 	float: left;
 }
-
 
 /** Thumbnails **/
 .thumbnail {
@@ -682,7 +692,7 @@ textarea[name="add-comment"] {
 	background-color: #6429ad;
 	color: white;
 	border: 1px solid #6429ad;
-	padding: 5px 10px;	
+	padding: 5px 10px;
 	margin-left: 10px;
 }
 
@@ -690,7 +700,6 @@ textarea[name="add-comment"] {
 	background-color: #b98cf2;
 	color: white;
 	border: 1px solid #b98cf2;
-
 }
 
 /** Comment body **/
