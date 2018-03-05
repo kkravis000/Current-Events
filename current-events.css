@@ -79,7 +79,7 @@ input:invalid {
 #SignUpConfirmation {
 	text-align: left;
 	width: 300px;
-	border: 3px solid purple;
+	border: 3px solid #6429ad;
 	margin-right: 275px;
 	margin-top: -80px;
 	float: right;
@@ -238,7 +238,7 @@ Back, Save buttons for choose-interests.html
 }
 
 .save-changes:hover {
-	background-color: #BA55D3; /* light purple */
+	background-color: #BA55D3; /* light #6429ad */
 	color: white;
 	border: 2px solid #b98cf2;
 }
@@ -485,39 +485,77 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 
 /* Article View */
 
-.article-header {
+.main-content-container {
+ vertical-align: top;
+}
+
+.article-container {
+	display: inline-block;
+	width: 920px;
 	margin-left: 35px;
+	margin-right: 35px;
 	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.article-tag {
+	background-color: #6429ad;
+	color: white;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+.article-info {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.article-header {
 	margin-bottom: 10px;
 	text-align: left;
 	vertical-align: middle;
 	font-size: 30px;
+	font-weight: bold;
+}
+
+.article-content-container {
+	border: 3px solid #6429ad;
+	width: 920px;
+	padding: 5px 135px 5px 135px;
+	margin-top: 6px;
+}
+
+.article-content {
+	width: 650px;
+	max-height: 2500px;
+	overflow:hidden;
 }
 
 .article-viewer {
-	margin-left: 35px;
-	margin-top: 6px;
-	height: 420px;
-	width: 940px;
-	border: 3px solid purple;
+	border: 0 none;
+
+	margin-left: -67px;
+	height: 2495px;
+	margin-top: -315px;
+	width: 1000px;
 }
 
 .video-viewer {
 	margin-left: 35px;
 	margin-top: 6px;
-	height: 420px;
+	
 	width: 940px;
-	border: 3px solid purple;
+	border: 3px solid #6429ad;
 }
 
 .right-container {
-	margin-left: 1000px;
-	margin-top: -435px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 150px;
 }
 
 .helpful-links-button {
-	background-color:	#FF69B4; /* Pink */
-	opacity: 1.0;
+	background-color: #6429ad; /* Pink */
 	border: none;
 	color: white;
 	padding: 10px 25px;
@@ -553,7 +591,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 .previous-article-section {
 	text-align: left;
 	width: 220px;
-	border: 3px solid purple;
+	border: 3px solid #6429ad;
 	margin-top: 10px;
 	padding: 10px;
 	margin-bottom: 290px;
@@ -562,7 +600,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 .helpful-links-section {
 	text-align: left;
 	width: 220px;
-	border: 3px solid purple;
+	border: 3px solid #6429ad;
 	margin-top: 10px;
 	padding: 10px;
 	margin-bottom: 155px;
@@ -617,8 +655,8 @@ Stylizes the commenting system.
 **/
 
 .comment {
-	margin: 10px 0 30px 40px;
-	width: 935px;
+	margin: 10px 0 35px 40px;
+	width: 920px;
 }
 
 .comment-header {
@@ -637,7 +675,7 @@ textarea {
 	resize: none;
 	display: block;
 	min-height: 15px;
-	width: 640px;
+	width: 860px;
 	overflow: hidden;
 	background: transparent;
 	border-color: #d8d8d8;
@@ -694,6 +732,10 @@ textarea[name="add-comment"] {
 	margin-right: 10px;
 }
 
+.cancel-comment-button:focus {
+	outline: none;
+}
+
 .cancel-comment-button:hover {
 	background-color: red;
 	color: white;
@@ -701,16 +743,32 @@ textarea[name="add-comment"] {
 
 .submit-comment-button {
 	background-color: #6429ad;
+	opacity: 1.0;
 	color: white;
 	border: 1px solid #6429ad;
 	padding: 5px 10px;
 	margin-left: 10px;
 }
 
+.submit-comment-button:focus {
+	outline: none;
+}
+
 .submit-comment-button:hover {
-	background-color: #b98cf2;
+	background-color: #BA55D3;
 	color: white;
-	border: 1px solid #b98cf2;
+	border: 1px solid #BA55D3;
+}
+
+.submit-comment-button-nohover {
+	background-color: #6429ad;
+	opacity: 0.2;
+	color: white;
+	border: 1px solid #6429ad;
+	padding: 5px 10px;
+	margin-left: 10px;
+	opacity: 0.2;
+	cursor: arrow;
 }
 
 /** Comment body **/
