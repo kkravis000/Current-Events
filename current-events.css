@@ -134,7 +134,7 @@ input:invalid {
 
 /* Stylize side bar on left hand side of preferences.html, choose-interests.html, and choose-news-formats.html page.*/
 .preference-nav-bar {
-	display: block;
+    display: block;
     color: #ffffff;
     text-align: center;
     width: 50%;
