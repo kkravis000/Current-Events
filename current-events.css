@@ -569,6 +569,17 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 /*
+Forums screen
+*/
+
+.forum-links-section {
+	border: 3px solid purple;
+	margin: 50px 100px;
+	padding: 10px;
+	float: left;
+}
+
+/*
 Navigation bar - I don't know why we need these important tags
 because this css should be loaded second but we need them for now.
 */
