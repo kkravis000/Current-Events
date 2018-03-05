@@ -491,11 +491,10 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 
 .article-container {
 	display: inline-block;
-	width: 920px;
+	width: 950px;
 	margin-left: 35px;
 	margin-right: 35px;
 	margin-top: 25px;
-	margin-bottom: 35px;
 }
 
 .article-tag {
@@ -520,32 +519,36 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 
 .article-content-container {
 	border: 3px solid #6429ad;
-	width: 920px;
-	padding: 5px 135px 5px 135px;
+	width: 955px;
 	margin-top: 6px;
 }
 
 .article-content {
-	width: 650px;
-	max-height: 2500px;
+	max-height: 5000px;
 	overflow:hidden;
 }
 
-.article-viewer {
+.article-viewer-main {
 	border: 0 none;
-
 	margin-left: -67px;
 	height: 2495px;
 	margin-top: -315px;
 	width: 1000px;
 }
 
+.article-viewer-wikipedia {
+	border: 0 none;
+	margin-left: -180px;
+	height: 4720px;
+	margin-top: -265px;
+	width: 1000px;
+}
+
 .video-viewer {
-	margin-left: 35px;
-	margin-top: 6px;
-	
-	width: 940px;
-	border: 3px solid #6429ad;
+	border: 0 none;
+	padding: 10px 0px 5px 5px;
+	height: 495px;
+	width: 945px;
 }
 
 .right-container {
@@ -555,7 +558,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 .helpful-links-button {
-	background-color: #6429ad; /* Pink */
+	background-color: #ECD444; /* Pink */
 	border: none;
 	color: white;
 	padding: 10px 25px;
@@ -588,11 +591,20 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	margin-bottom: 10px;
 }
 
-.previous-article-section {
+.previous-article-section-video {
 	text-align: left;
 	width: 220px;
 	border: 3px solid #6429ad;
 	margin-top: 10px;
+	padding: 10px;
+	margin-bottom: 290px;
+}
+
+.previous-article-section-text {
+	text-align: left;
+	width: 220px;
+	border: 3px solid #6429ad;
+	margin-top: -30px;
 	padding: 10px;
 	margin-bottom: 290px;
 }
