@@ -139,7 +139,7 @@ $(document).ready(function() {
       					'<a href="profile.html"><img class="thumbnail" src="thumbnail_car.jpg"></a>' +
       					'<div class="post">' + 
       					'<div class="post-info"><a class="post-user-name" href="#">' +
-      					'Jane Doe' + 
+      					'Jane.Doe' + 
       					'</a><span class="post-time">' +
       					dateTime + 
       					'</span></div>' +
