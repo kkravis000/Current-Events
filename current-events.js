@@ -165,7 +165,7 @@ $(document).ready(function() {
 
 	$("#submit-comment").click(function() {
 		// get user input
-		var content = $("#comment-textarea").val();
+		var content = $("#comment-textarea-main").val();
 		content = content.replace(/\r?\n/g, '<br />');
 		
 		$(".comment-buttons").hide();
