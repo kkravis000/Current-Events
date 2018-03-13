@@ -14,6 +14,74 @@ a:hover {
 	text-decoration: none;
 }
 
+/*
+Homepage
+*/
+
+.center {
+	margin: auto auto;
+}
+
+.homepage-content {
+	display: grid;
+	width: 80%;
+	grid-template-columns: 47% 47%;
+	grid-template-rows: auto;
+	grid-column-gap: 6%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.log-in-or-create-account {
+	margin-left: 10%;
+	margin-top: 15%;
+
+}
+
+.create-account {
+	display: block;
+	width: 80%;
+	padding: 5% 8%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	background:linear-gradient(to right, #6429ad, #a28caa);
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.create-account:hover {
+	color: white;
+	background: linear-gradient(to right, #766191, #ceb1d6);
+}
+
+
+.log-in {
+	display: block;
+	width: 35%;
+	padding: 2% 8%;
+	margin-top: 0;
+	margin-bottom: 3%;
+	margin-left: 3%;
+	margin-right: auto;
+	color: #6429ad;
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #6429ad;
+}
+
+
+
+.log-in:hover {
+	box-shadow:0px 0px 0px 2px #6429ad inset;
+	font-weight: bold;
+	color: #6429ad;
+}
+
+
 /* For the sign up section */
 .sign-up-header {
 	text-align: center;
@@ -109,27 +177,111 @@ input:invalid {
 
 /* Choose Interests Section */
 
-/* Create two columns.*/
-.column {
-	float: left;
+.two-column-layout {
+	display: grid;
+	grid-template-columns: 19% 79.5%;
+	grid-template-rows: auto;
+	grid-column-gap: 0.5%;
+	height: 100%;
+}
+
+.profile-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+
+}
+
+.profile-bullet a {
+	display: block;
+	color: #000;
+	padding: 16px 32px;
+	text-decoration: none;
+}
+
+.profile-bullet a.active {
+	background-color: #6429ad;
+	color: white;
+}
+
+.profile-bullet a:hover:not(.active) {
+	background-color: #d1d1d1;
+	color: black;
+}
+
+
+.preference-dashboard {
 	text-align: center;
 }
 
-.left {
-	width: 25%;
-	margin: 0.5%;
+
+.go-choose {
+	background-color: white;
+	color: #6429ad;
+	font-weight: bold;
 }
 
-.right {
-	width: 60%;
-	margin: 1% 5% 1% 0.5%;
+.go-choose:hover {
+	color: #BA55D3;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.interested-areas {
+	margin-top: 30px;
+	background: linear-gradient(to bottom, #fff, #f1f1f1);
+	padding-bottom: 3.5%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.preferred-formats {
+	margin-top: 50px;
+	background: linear-gradient(to bottom, #fff, #f1f1f1);
+	padding-bottom: 3.5%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.preference-dashboard-section-header {
+	display: block;
+	font-size: 20px;
+	background-color: #fff;
+	color: black;
+	margin-bottom: 5%;
+	padding: 1%;
+	margin-left: 18%;
+	margin-right: 19%;
+	border-bottom: 2px solid black;
+}
+
+.preference-dashboard-section-header:hover {
+	background: linear-gradient(to right, #6429ad, #a28caa);
+	color: white;
+	border-bottom: 2px solid transparent;
+}
+
+
+.interested-area-wrapper {
+	background-color: white;
+	display: inline-block;
+	height: 184px;
+	width: 200px;
+	margin: 10px 20px;
+	color: black;
+	border: 1px solid transparent;
+}
+
+.interested-area-pic {
+	display: block;
+	height: 136px;
+	width: 200px;
+	text-align: center;
+	opacity: 1.0;
+}
+
+.hovered-picture:hover {
+	border: 1px solid #a1a1a1;
 }
 
 /* Stylize side bar on left hand side of preferences.html, choose-interests.html, and choose-news-formats.html page.*/
@@ -153,7 +305,8 @@ input:invalid {
 .preference-header {
 	text-align: center;
 	vertical-align: middle;
-	font-size: 30px;
+	font-size: 25px;
+	font-weight: bold;
 	margin: 3% auto 1% auto;
 }
 
@@ -162,6 +315,7 @@ input:invalid {
 	vertical-align: middle;
 	font-size: 15px;
 	margin: 1% auto 3% auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .interest-tags {
@@ -169,8 +323,10 @@ input:invalid {
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 	grid-row-gap: 5%;
-	grid-column-gap: 0.5%;
+	grid-column-gap: 1%;
 	justify-item: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .interest-tag-wrapper {
@@ -180,7 +336,7 @@ input:invalid {
 }
 
 .interest-tag-wrapper:hover .interest-tag-pic {
-	box-shadow: 5px 5px #BA55D3;
+	box-shadow: 2px 5px #BA55D3;
 }
 
 .interest-tag-pic {
@@ -194,10 +350,11 @@ input:invalid {
 .interest-tag-text {
 	height: 38px;
 	width: 200px;
-	margin-top: 10;
-	font-size: 24px;
+	margin-top: 8px;
+	font-size: 18px;
 	text-align: center;
 }
+
 
 /*
 Back, Save buttons for choose-interests.html
