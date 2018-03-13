@@ -35,28 +35,34 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="under-construction.html">Log In</a></li>
-        <li><a href="sign-up.html">Create Your Account</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="featured-event-scroller">
-  <h1>
-    Featured News
-  </h1>
-  <button class="btn btn-default featured-article-nav-button" onclick="prevArticleFeatured()">
-    <i class="material-icons">navigate_before</i>
-  </button>
-  <div class="featured-event">
-    <p id="featured-event-title"><a href="https://www.cnn.com/2018/02/17/politics/white-house-responds-mueller/index.html">
-      Trump responds to Mueller indictment news
-    </a></p>
+<div class="homepage-content">
+  <div class="event-scroller center">
+    <h1>Featured</h1>
+      <button class="btn btn-default article-nav-button" onclick="prevArticleFeatured()"><i class="material-icons">navigate_before</i></button>
+      <a href="under-construction.html" class="event" id="event-featured">
+        <p id="featured-event-title">Trump responds to Mueller indictment news</p>
+      </a>
+      <button class="btn btn-default article-nav-button" onclick="nextArticleFeatured()"><i class="material-icons md-48">navigate_next</i></button>
   </div>
-  <button class="btn btn-default featured-article-nav-button" onclick="nextArticleFeatured()">
-    <i class="material-icons">navigate_next</i>
-  </button>
+
+  <div class="log-in-or-create-account">
+    <p style="font-size: 30px; font-weight:bold; text-align:center;">Customize Your News Feed</p>
+    <p style="font-size: 15px; margin-top: 5%;text-align:center;">Your favorite news in your favorite formats, plus related stories specially prepared for you.</p>
+    <a href="sign-up.html" class="create-account">Create Your Account</a>
+    <!--
+    <p>Already have an account?</p>
+    <a href="under-construction.html" class="log-in">Log In</a>
+  -->
+  </div>
 </div>
+
+
+
 
 </body>
 </html>

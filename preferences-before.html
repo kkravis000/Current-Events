@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Choose News Format</title>
+<title>Preferences</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,7 +28,7 @@
         <li class="active"><a href="profile.html">Profile</a></li>
         <li><a href="under-construction.html">Forums</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
             <span class="glyphicon glyphicon-cog"></span>
@@ -37,7 +37,7 @@
             <li><a href="choose-interests.html">Change Preferences</a></li>
             <li><a href="home.html">Log Out</a></li>
           </ul>
-      </ul>
+      </ul> -->
       <form class="navbar-form navbar-right navbar-search" role="search">
         <div class="form-group input-group">
           <input type="text" class="form-control" placeholder="Search..">
@@ -48,50 +48,47 @@
           </span>        
         </div>
       </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Jane.Doe <span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="choose-interests.html">Change Preferences</a></li>
+            <li><a href="home.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
 	<!-- Content -->
-	<div class="two-column-layout">
-		<!-- Left column -->
+
+<div class="two-column-layout">
   <ul class="profile-nav">
-      <li class="profile-bullet"><a href="preferences-after2.html" class="active">Preference</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">Personal Information</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">My Comments</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">Favorite News</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">Browsing History</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">Friends</a></li>
-      <li class="profile-bullet"><a href="under-construction.html">Followed topics</a></li>
-    </ul>
+    <li class="profile-bullet"><a href="#" class="active">Preference</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Personal Information</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">My Comments</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Favorite News</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Browsing History</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Friends</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Followed topics</a></li>
+  </ul>
 
-		<!-- Right column -->
-		<div>
+  <div class="preference-dashboard">
+    <h1 style="font-size:25px; font-weight:bold;">Preference Dashboard</h1>
 
-			<div class="preference-header">Choose News Format</div>
-			<div class="preference-illustration">News will be presented in chosen formats.</div>
+    <div class="interested-areas">
+      <a class="preference-dashboard-section-header" href="choose-interests.html">Interested Areas <i class="material-icons">mode_edit</i></a>
+      <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">You haven't choose any interested areas yet. <a href="choose-interests.html" class="go-choose">Choose now!</a></p>
+    </div>
 
-			<div class="news-format-checkbox-container">
-				<label class="container">Video<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
-				<label class="container">Texts<input type="checkbox"><span class="checkmark"></span></label>
-				<label class="container">Audio<input type="checkbox"><span class="checkmark"></span></label>
-			</div>
+    <div class="preferred-formats">
+      <a href="choose-news-formats.html" class="preference-dashboard-section-header">Preferred Formats <i class="material-icons">mode_edit</i></a>
+      <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">You haven't set your preferred news format yet. <a href="choose-news-formats.html" class="go-choose">Set now!</a></p>
+    </div>
+  </div>
+</div>
 
-
-			<div class="centered-buttons-wrapper">
-			<a href="preferences-after2.html" class="set-preferences-button discard-changes">Back</a>
-			<a href="#save-popup" class="set-preferences-button save-changes">Save</a>
-			<div id="save-popup" class="overlay">
-				<div class="popup">
-					<h2>Save Success</h2>
-					<a class="close" href="#">&times;</a>
-					<div class="popup-content">You have successfully saved your changes.
-				</div>
-			</div>
-		</div>
-
-
-		</div>
-	</div>
 </body>
 </html>

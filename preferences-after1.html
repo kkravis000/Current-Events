@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Preferences Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="current-events.css"/>
+  <script src="current-events.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-inverse navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">
+        <span class="glyphicon glyphicon-education"></span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="explore-interests.html">Explore Your Interests</a></li>
+        <li class="active"><a href="profile.html">Profile</a></li>
+        <li><a href="under-construction.html">Forums</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+            <span class="glyphicon glyphicon-cog"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="choose-interests.html">Change Preferences</a></li>
+            <li><a href="home.html">Log Out</a></li>
+          </ul>
+      </ul> -->
+      <form class="navbar-form navbar-right navbar-search" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Jane.Doe <span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="choose-interests.html">Change Preferences</a></li>
+            <li><a href="home.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Content -->
+
+<div class="two-column-layout">
+  <ul class="profile-nav">
+    <li class="profile-bullet"><a href="#" class="active">Preference</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Personal Information</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">My Comments</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Favorite News</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Browsing History</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Friends</a></li>
+    <li class="profile-bullet"><a href="under-construction.html">Followed topics</a></li>
+  </ul>
+
+  <div class="preference-dashboard">
+    <h1 style="font-size:25px;font-weight:bold;">Preference Dashboard</h1>
+
+    <div class="interested-areas">
+      <a class="preference-dashboard-section-header" href="choose-interests.html">Interested Areas <i class="material-icons">mode_edit</i></a>
+      <a href="explore-interests.html" class="interested-area-wrapper hovered-picture">
+        <img class="interested-area-pic" src="politics.webp"></img>
+          <div class="interest-tag-text">Politics</div>
+        </a>
+      <a href="explore-interests.html" class="interested-area-wrapper hovered-picture">
+        <img class="interested-area-pic" src="seasonal.jpg"></img>
+          <div class="interest-tag-text">Seasonal</div>
+        </a>
+    </div>
+
+    <div class="preferred-formats">
+      <a class="preference-dashboard-section-header" href="choose-news-formats.html">Preferred Formats <i class="material-icons">mode_edit</i></a>
+      <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">You haven't set your preferred news format yet. <a href="choose-news-formats.html" class="go-choose">Set now!</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
