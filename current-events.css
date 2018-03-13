@@ -1,5 +1,4 @@
-/*
-Global style
+ style
 */
 
 body {
@@ -913,6 +912,11 @@ Stylizes the commenting system.
 	width: 950px;
 }
 
+.comment-main {
+	margin: 10px 0 35px 40px;
+	width: 500px;
+}
+
 .comment-header {
 	margin: 5px 0px 5px 0;
 	padding: 5px 0px 5px 0;
@@ -942,6 +946,10 @@ textarea {
 	line-height: 1.4em;
 	padding: 5px 0 8px 5px;
 	margin: 5px 0 5px 5px;
+}
+
+#comment-textarea-main {
+	width: 445px;
 }
 
 textarea:focus {
