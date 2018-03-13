@@ -57,6 +57,9 @@ Homepage
 	background: linear-gradient(to right, #766191, #ceb1d6);
 }
 
+.log-in-text {
+	text-align: center;
+}
 
 .log-in {
 	display: block;
@@ -64,7 +67,7 @@ Homepage
 	padding: 2% 8%;
 	margin-top: 0;
 	margin-bottom: 3%;
-	margin-left: 3%;
+	margin-left: 33%;
 	margin-right: auto;
 	color: #6429ad;
 	background-color: white;
@@ -303,7 +306,7 @@ input:invalid {
  }
 
 .preference-header {
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	font-size: 25px;
 	font-weight: bold;
@@ -311,7 +314,7 @@ input:invalid {
 }
 
 .preference-illustration {
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	font-size: 15px;
 	margin: 1% auto 3% auto;
@@ -623,11 +626,11 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	float: left;
 	height: 450px;
 	width: 550px;
-	margin: 50px 475px;
+	margin: 50px 0px 50px 200px;
 }
 
 .featured-event-scroller h1 {
-	text-align: center;
+	text-align: left;
 }
 
 .featured-event {
@@ -638,6 +641,36 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	border: 1px solid black;
 	text-align: center;
 	font-size: 30px;
+}
+
+.login-create-account-wrapper {
+	width: 390px;
+	float: left;
+	padding: 130px 30px;
+}
+
+.login-create-account-wrapper h1 {
+	margin: 0px 140px;
+}
+
+.login-create-account-button {
+	background-color: #6429ad; /* Purple */
+	opacity: 1.0;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 30px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.login-create-account-wrapper a:hover {
+	background-color: #BA55D3;
+	color: white;
 }
 
 /* Article View */
@@ -844,7 +877,7 @@ because this css should be loaded second but we need them for now.
 	font-size: 15px;
 }
 
-.glyphicon-education {
+.glyphicon-home {
 	font-size: 21px;
 }
 
