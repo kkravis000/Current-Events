@@ -497,6 +497,14 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	margin-top: 25px;
 }
 
+.article-container-main {
+	display: inline-block;
+	width: 600px;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-top: 25px;
+}
+
 .article-tag {
 	background-color: #6429ad;
 	color: white;
@@ -518,7 +526,6 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 .article-content-container {
-	border: 3px solid #6429ad;
 	width: 955px;
 	margin-top: 6px;
 }
@@ -530,10 +537,10 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 
 .article-viewer-main {
 	border: 0 none;
-	margin-left: -67px;
-	height: 2495px;
-	margin-top: -315px;
-	width: 1000px;
+	margin-left: -5px;
+	height: 2565px;
+	margin-top: -355px;
+	width: 500px;
 }
 
 .article-viewer-wikipedia {
@@ -555,12 +562,21 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 150px;
+	position: fixed;
+}
+
+.main-right-container {
+  vertical-align: top;
+	margin-top: 210px;
+	position: fixed;
+	width: 1500px;
+	display: inline-block;
 }
 
 .helpful-links-button {
-	background-color: #ECD444; /* Pink */
+	background-color: white;
 	border: none;
-	color: white;
+	color: #6429ad;
 	padding: 10px 25px;
 	margin: 5px 15px;
 	text-align: center;
@@ -569,6 +585,18 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	font-size: 14px;
 	width: 160px;
 	cursor: pointer;
+}
+
+.helpful-links-section {
+  vertical-align: top;
+	display: inline-block;
+	text-align: left;
+	width: 220px;
+	background-color: #6429ad;
+	color: white;
+	margin-left: 110px;
+	padding: 10px;
+	margin-top: -32px;
 }
 
 .previous-article-button {
@@ -592,30 +620,35 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 }
 
 .previous-article-section-video {
+	border: 3px solid #6429ad;
 	text-align: left;
 	width: 220px;
-	border: 3px solid #6429ad;
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 10px;
 	margin-bottom: 290px;
 }
 
-.previous-article-section-text {
+.previous-article-section-wikipedia {
+  vertical-align: top;
+	display: inline-block;
+	border: 3px solid #6429ad;
 	text-align: left;
 	width: 220px;
-	border: 3px solid #6429ad;
 	margin-top: -30px;
 	padding: 10px;
 	margin-bottom: 290px;
 }
 
-.helpful-links-section {
+.previous-article-section-main {
+  vertical-align: top;
+	display: inline-block;
+	border: 3px solid #6429ad;
 	text-align: left;
 	width: 220px;
-	border: 3px solid #6429ad;
-	margin-top: 10px;
+	margin-top: -30px;
 	padding: 10px;
-	margin-bottom: 155px;
+	margin-bottom: 290px;
+	margin-left: 15px;
 }
 
 /*
@@ -666,6 +699,11 @@ because this css should be loaded second but we need them for now.
 Stylizes the commenting system.
 **/
 
+.comment-main {
+	margin: 10px 0 35px 40px;
+	width: 500px;
+}
+
 .comment {
 	margin: 10px 0 35px 40px;
 	width: 950px;
@@ -688,6 +726,25 @@ textarea {
 	display: block;
 	min-height: 15px;
 	width: 895px;
+	overflow: hidden;
+	background: transparent;
+	border-color: #d8d8d8;
+	border-style: none none solid none;
+	border-width: 1px;
+	box-shadow: none;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 5px 0 8px 5px;
+	margin: 5px 0 5px 5px;
+}
+
+#main-text-area {
+	resize: none;
+	display: block;
+	min-height: 15px;
+	width: 445px;
 	overflow: hidden;
 	background: transparent;
 	border-color: #d8d8d8;
