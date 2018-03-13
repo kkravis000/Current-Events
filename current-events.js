@@ -95,7 +95,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#comment-textarea-main").click(function() {
+	$("#comment-textarea").click(function() {
 
 		var inputStr = $(this).val();
 		if (inputStr.length > 3) {
@@ -115,62 +115,22 @@ $(document).ready(function() {
 
 	});
 	
-	// repeat of above, but with id for main page.
-
-	$("#comment-textarea-main").on('input', function() {
-		$(this).css('height', 'auto');
-		var sh = $(this)[0].scrollHeight;
-		$(this).css('height', sh + 'px');
-
-		var inputStr = $(this).val();
-		if (inputStr.length > 3) {
-			//$("#submit-comment").css("opacity", "1.0");
-			$('#submit-comment').removeClass("submit-comment-button-nohover");
-			$("#submit-comment").addClass("submit-comment-button");
-			$("#submit-comment").prop("disabled", false);
-		}
-		else {
-			$("#submit-comment").removeClass("submit-comment-button");
-			$("#submit-comment").addClass("submit-comment-button-nohover");
-			$("#submit-comment").prop("disabled", true);
-		}
-	});
-
-	$("#comment-textarea-main").click(function() {
-
-		var inputStr = $(this).val();
-		if (inputStr.length > 3) {
-			//$("#submit-comment").css("opacity", "1.0");
-			$('#submit-comment').removeClass("submit-comment-button-nohover");
-			$("#submit-comment").addClass("submit-comment-button");
-			$("#submit-comment").prop("disabled", false);
-		}
-		else {
-			$("#submit-comment").removeClass("submit-comment-button");
-			$("#submit-comment").addClass("submit-comment-button-nohover");
-			$("#submit-comment").prop("disabled", true);
-		}
-
-		$(".comment-buttons").show();
-		$(".comment-header").css('height', 'auto');
-
-	});
 
 	$("#cancel-comment").click(function() {
 		$(".comment-buttons").hide();
-		$("#comment-textarea-main").val('');
-		$("#comment-textarea-main").css('height', 'auto');
+		$("#comment-textarea").val('');
+		$("#comment-textarea").css('height', 'auto');
 		$(".comment-header").css('height', '150px');
 	});
 
 	$("#submit-comment").click(function() {
 		// get user input
-		var content = $("#comment-textarea-main").val();
+		var content = $("#comment-textarea").val();
 		content = content.replace(/\r?\n/g, '<br />');
 		
 		$(".comment-buttons").hide();
-		$("#comment-textarea-main").val('');
-		$("#comment-textarea-main").css('height', 'auto');
+		$("#comment-textarea").val('');
+		$("#comment-textarea").css('height', 'auto');
 		$(".comment-header").css('height', '150px');
 
 		// get date and time
@@ -181,7 +141,7 @@ $(document).ready(function() {
 
 		// append on top
 		var userComment = '<div class="posted-comments">' +
-      					'<a href="profile.html"><img class="thumbnail" src="thumbnail_car.jpg"></a>' +
+      					'<a href="profile.html"><img class="thumbnail" src="default.png"></a>' +
       					'<div class="post">' + 
       					'<div class="post-info"><a class="post-user-name" href="#">' +
       					'Jane.Doe' + 
