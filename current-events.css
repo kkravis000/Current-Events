@@ -87,7 +87,8 @@ Homepage
 
 /* For the sign up section */
 .sign-up-header {
-	text-align: center;
+	text-align: left;
+	margin-left: 175px;
 	vertical-align: middle;
 	font-size: 30px;
 }
@@ -142,6 +143,10 @@ input:invalid {
 	display: inline-block;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+#submit-sign-up:hover {
+	background-color: #BA55D3;
 }
 
 
@@ -875,6 +880,10 @@ because this css should be loaded second but we need them for now.
 }
 
 .navbar-nav > li a:hover {
+	background-color: #BA55D3 !important;
+}
+
+.dropdown-menu > li a:hover {
 	background-color: #BA55D3 !important;
 }
 
