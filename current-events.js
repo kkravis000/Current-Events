@@ -95,7 +95,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#comment-textarea").click(function() {
+	$("#comment-textarea-main").click(function() {
 
 		var inputStr = $(this).val();
 		if (inputStr.length > 3) {
@@ -158,8 +158,8 @@ $(document).ready(function() {
 
 	$("#cancel-comment").click(function() {
 		$(".comment-buttons").hide();
-		$("#comment-textarea").val('');
-		$("#comment-textarea").css('height', 'auto');
+		$("#comment-textarea-main").val('');
+		$("#comment-textarea-main").css('height', 'auto');
 		$(".comment-header").css('height', '150px');
 	});
 
@@ -169,8 +169,8 @@ $(document).ready(function() {
 		content = content.replace(/\r?\n/g, '<br />');
 		
 		$(".comment-buttons").hide();
-		$("#comment-textarea").val('');
-		$("#comment-textarea").css('height', 'auto');
+		$("#comment-textarea-main").val('');
+		$("#comment-textarea-main").css('height', 'auto');
 		$(".comment-header").css('height', '150px');
 
 		// get date and time
