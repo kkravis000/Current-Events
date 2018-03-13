@@ -699,10 +699,6 @@ because this css should be loaded second but we need them for now.
 Stylizes the commenting system.
 **/
 
-.comment-main {
-	margin: 10px 0 35px 40px;
-	width: 500px;
-}
 
 .comment {
 	margin: 10px 0 35px 40px;
@@ -726,25 +722,6 @@ textarea {
 	display: block;
 	min-height: 15px;
 	width: 895px;
-	overflow: hidden;
-	background: transparent;
-	border-color: #d8d8d8;
-	border-style: none none solid none;
-	border-width: 1px;
-	box-shadow: none;
-	color: black;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	line-height: 1.4em;
-	padding: 5px 0 8px 5px;
-	margin: 5px 0 5px 5px;
-}
-
-#main-text-area {
-	resize: none;
-	display: block;
-	min-height: 15px;
-	width: 445px;
 	overflow: hidden;
 	background: transparent;
 	border-color: #d8d8d8;
