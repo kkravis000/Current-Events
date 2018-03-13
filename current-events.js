@@ -114,6 +114,47 @@ $(document).ready(function() {
 		$(".comment-header").css('height', 'auto');
 
 	});
+	
+	// repeat of above, but with id for main page.
+
+	$("#comment-textarea-main").on('input', function() {
+		$(this).css('height', 'auto');
+		var sh = $(this)[0].scrollHeight;
+		$(this).css('height', sh + 'px');
+
+		var inputStr = $(this).val();
+		if (inputStr.length > 3) {
+			//$("#submit-comment").css("opacity", "1.0");
+			$('#submit-comment').removeClass("submit-comment-button-nohover");
+			$("#submit-comment").addClass("submit-comment-button");
+			$("#submit-comment").prop("disabled", false);
+		}
+		else {
+			$("#submit-comment").removeClass("submit-comment-button");
+			$("#submit-comment").addClass("submit-comment-button-nohover");
+			$("#submit-comment").prop("disabled", true);
+		}
+	});
+
+	$("#comment-textarea-main").click(function() {
+
+		var inputStr = $(this).val();
+		if (inputStr.length > 3) {
+			//$("#submit-comment").css("opacity", "1.0");
+			$('#submit-comment').removeClass("submit-comment-button-nohover");
+			$("#submit-comment").addClass("submit-comment-button");
+			$("#submit-comment").prop("disabled", false);
+		}
+		else {
+			$("#submit-comment").removeClass("submit-comment-button");
+			$("#submit-comment").addClass("submit-comment-button-nohover");
+			$("#submit-comment").prop("disabled", true);
+		}
+
+		$(".comment-buttons").show();
+		$(".comment-header").css('height', 'auto');
+
+	});
 
 	$("#cancel-comment").click(function() {
 		$(".comment-buttons").hide();
