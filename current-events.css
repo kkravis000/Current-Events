@@ -219,6 +219,12 @@ input:invalid {
 	text-align: center;
 }
 
+.preference-dashboard-header {
+	font-size: 32px;
+	text-align: left;
+	margin-left: 15%;
+}
+
 
 .go-choose {
 	background-color: transparent;
@@ -308,16 +314,15 @@ input:invalid {
 .preference-header {
 	text-align: left;
 	vertical-align: middle;
-	font-size: 25px;
-	font-weight: bold;
-	margin: 3% auto 1% auto;
+	font-size: 32px;
+	margin: 3% 10% 1% 10%;
 }
 
 .preference-illustration {
 	text-align: left;
 	vertical-align: middle;
 	font-size: 15px;
-	margin: 1% auto 3% auto;
+	margin: 1% 10% 3% 10%;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -387,20 +392,21 @@ Back, Save buttons for choose-interests.html
 }
 
 .discard-changes:hover {
-	background-color: red;
-	color: white;
+	box-shadow:0px 0px 0px 2px red inset;
+	font-weight: bold;
+	color: red;
 }
 
 .save-changes {
 	background-color: #6429ad; /* Purple */
-	color: white;
 	border: 2px solid #6429ad;
+	color: white;
 }
 
 .save-changes:hover {
 	background-color: #BA55D3; /* light #6429ad */
+	border-color: #BA55D3;
 	color: white;
-	border: 2px solid #b98cf2;
 }
 
 /*
