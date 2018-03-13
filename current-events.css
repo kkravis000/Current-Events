@@ -581,6 +581,7 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	height: 290px;
 	width: 400px;
 	margin: 5px;
+	color: #e3e3e3;
 	/* padding: 110px 0; */
 	/*width: 300px;*/
 	/*border: 1px solid black;*/
@@ -597,6 +598,11 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	background-size: 400px 290px;
 }
 
+#event-featured {
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%,rgba(255, 255, 255, 0.3) 100%), url("trump.jpg");
+	background-size: 400px 290px;
+}
+
 .event p {
 	padding: 5px 0;
 	margin: auto 30px;
@@ -609,11 +615,8 @@ Stylize choose-format.html. The checkbox code is adapted from w3schools.com.
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.event a {
-	color: #e3e3e3;
-}
 
-.event a:hover {
+.event:hover {
 	color: white;
 }
 
