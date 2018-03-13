@@ -917,6 +917,11 @@ Stylizes the commenting system.
 	width: 500px;
 }
 
+
+.comment-wiki {
+	width: 810px;
+}
+
 .comment-header {
 	margin: 5px 0px 5px 0;
 	padding: 5px 0px 5px 0;
@@ -929,7 +934,7 @@ Stylizes the commenting system.
 }
 
 /** Textbox **/
-textarea {
+.general-textarea {
 	resize: none;
 	display: block;
 	min-height: 15px;
@@ -946,6 +951,10 @@ textarea {
 	line-height: 1.4em;
 	padding: 5px 0 8px 5px;
 	margin: 5px 0 5px 5px;
+}
+
+.comment-textarea-wiki {
+	width: 755px;
 }
 
 .comment-textarea-main {
