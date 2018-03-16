@@ -20,7 +20,7 @@ Homepage
 
 .homepage-content {
 	display: grid;
-	width: 80%;
+	width: 85%;
 	grid-template-columns: 47% 47%;
 	grid-template-rows: auto;
 	grid-column-gap: 6%;
@@ -30,7 +30,7 @@ Homepage
 
 .log-in-or-create-account {
 	margin-left: 10%;
-	margin-top: 15%;
+  margin-top: 10%;
 
 }
 
@@ -38,8 +38,8 @@ Homepage
 	display: block;
 	width: 80%;
 	padding: 5% 8%;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 9%;
+	margin-bottom: 9%;
 	margin-left: auto;
 	margin-right: auto;
 	background:linear-gradient(to right, #6429ad, #a28caa);
@@ -53,8 +53,17 @@ Homepage
 	background: linear-gradient(to right, #766191, #ceb1d6);
 }
 
-.log-in-text {
-	text-align: center;
+.home-header {
+	text-align: left;
+	vertical-align: middle;
+	font-size: 49px;
+	font-weight: bolder;
+}
+
+.home-content {
+	font-size: 15px;
+	margin-top: 7%;
+	margin-left: 6px;
 }
 
 .log-in {
@@ -86,7 +95,7 @@ Homepage
 	text-align: left;
 	margin-left: 175px;
 	vertical-align: middle;
-	font-size: 30px;
+	font-size: 32px;
 }
 
 .sign-up-content {
@@ -94,7 +103,7 @@ Homepage
 	grid-template-columns: auto;
 	grid-template-rows: 50px 50px auto;
 	grid-row-gap: 30px;
-	margin-top: 10px;
+	margin-top: 70px;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-bottom: 10px;
