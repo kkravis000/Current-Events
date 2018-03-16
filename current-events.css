@@ -885,6 +885,7 @@ because this css should be loaded second but we need them for now.
 
 .navbar-brand {
 	color: white !important;
+	padding: 5px 10px;
 }
 
 .glyphicon-cog {
@@ -897,6 +898,11 @@ because this css should be loaded second but we need them for now.
 
 .navbar-search {
 	margin: 7px;
+}
+
+.logo-icon {
+	width: 40px;
+	height: 40px;
 }
 
 /**
