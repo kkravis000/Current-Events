@@ -237,6 +237,8 @@ input:invalid {
 
 
 .go-choose {
+	display: inline-block;
+	margin-left: 5px;
 	background-color: transparent;
 	color: #6429ad;
 	font-weight: bold;
@@ -1098,4 +1100,19 @@ textarea[name="add-comment"] {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.4em;
+}
+
+
+.prompt-explore-interests {
+	font-size: 15px;
+	text-align: left;
+	margin-left: 15%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: flex;
+ 	align-items: center;
+}
+
+.format-list {
+	font-size: 15px;
+	text-align: center;
 }
